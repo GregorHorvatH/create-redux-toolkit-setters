@@ -34,5 +34,6 @@ export const createSetters = initialState =>
       [actionName]: (state, action) => {
         state[key] = action.payload;
       },
+      reset: () => initialState,
     };
   }, {});
